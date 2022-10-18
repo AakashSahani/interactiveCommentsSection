@@ -1,5 +1,4 @@
 import CommentTitle from './CommentTitle';
-import Rating from './Rating';
 import CommentBody from './CommentBody';
 
 function Comment() {

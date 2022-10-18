@@ -27,18 +27,19 @@ body {
 	font-family: 'Rubik', sans-serif;
 	min-width: 100vw;
 	min-height: 100vh;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--Lightgray);
 }
 
-.app {
+/* .app {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	min-width: 60vw;
-}
+} */
 
 .container {
 	display: flex;
@@ -146,4 +147,26 @@ body {
 	width: auto;
 	height: 1rem;
 	margin-right: 0.5rem;
+}
+@media (max-width: 1080px) {
+	.container {
+		position: relative;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		padding: 1rem 0;
+		min-width: 350px;
+	}
+	.rating-container {
+		margin-left: 1rem;
+		margin-top: 1rem;
+	}
+	.rating {
+		flex-direction: row;
+	}
+	.reply {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-bottom: 1.5rem;
+	}
 }
