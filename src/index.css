@@ -27,6 +27,9 @@ body {
 	font-family: 'Rubik', sans-serif;
 	min-width: 100vw;
 	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--Lightgray);
 }
 
 .app {
@@ -34,10 +37,22 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	flex-direction: column;
+	min-width: 60vw;
 }
 
-.app .rating {
+.container {
+	display: flex;
+	padding: 1rem 2rem;
+	width: 50vw;
+	min-height: 200px;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--White);
+	border-radius: 0.5rem;
+	box-shadow: 0 0 2px 0 var(--White);
+}
+
+.rating {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -65,7 +80,15 @@ body {
 
 .comment {
 	display: flex;
-	width: 60vw;
+	width: 100%;
+	flex-direction: column;
+}
+
+.comment > p {
+	margin-left: 1rem;
+	color: var(--GrayishBlue);
+	font-size: 16px;
+	line-height: 1.5;
 }
 
 .info {
@@ -73,6 +96,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-left: 1rem;
+	margin-bottom: 1rem;
 }
 
 .info > * {

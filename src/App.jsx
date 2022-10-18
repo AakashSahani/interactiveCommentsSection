@@ -4,7 +4,10 @@ import Comment from './components/Comment';
 function App() {
 	return (
 		<div className="app">
-			<Comment />
+			<div className="container">
+				<Rating />
+				<Comment />
+			</div>
 		</div>
 	);
 }

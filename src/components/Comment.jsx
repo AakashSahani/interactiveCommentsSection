@@ -1,11 +1,12 @@
 import CommentTitle from './CommentTitle';
 import Rating from './Rating';
+import CommentBody from './CommentBody';
 
 function Comment() {
 	return (
 		<div className="comment">
-			<Rating />
 			<CommentTitle />
+			<CommentBody />
 		</div>
 	);
 }
