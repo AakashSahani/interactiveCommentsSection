@@ -1,13 +1,16 @@
 import amyrobson from '../assets/avatars/image-amyrobson.webp';
 import reply from '../assets/icon-reply.svg';
 
-function CommentTitle() {
+function CommentTitle({ user, postedOn, score }) {
+	const handleReply = () => {
+		console.log('Clicked Reply');
+	};
 	return (
 		<div className="comment-title">
 			<div className="info">
-				<img src={amyrobson} alt="Profile Picture" />
-				<div>Amy Robson</div>
-				<div className="status">1 month ago</div>
+				<img src={user.image.webp} alt="Profile Picture" />
+				<div>{user.username}</div>
+				<div className="status">{postedOn}</div>
 			</div>
 			<button className="reply">
 				<img src={reply} alt="Reply" /> Reply

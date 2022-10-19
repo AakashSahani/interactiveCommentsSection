@@ -5,12 +5,10 @@ import CommentData from '../data/CommentData';
 const CommentContext = createContext();
 
 export const CommentProvider = ({ children }) => {
-	const [comments, setComments] = useState(CommentData);
-	const sayHello = () => {
-		console.log(comments);
-	};
+	const [comment, setComment] = useState(CommentData);
+
 	return (
-		<CommentContext.Provider value={{ sayHello }}>
+		<CommentContext.Provider value={{ comment, setComment }}>
 			{children}
 		</CommentContext.Provider>
 	);

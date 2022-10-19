@@ -1,14 +1,10 @@
-import Rating from './components/Rating';
-import Comment from './components/Comment';
 import { CommentProvider } from './context/CommentContext';
+import CommentContainer from './components/CommentContainer';
 
 function App() {
 	return (
 		<CommentProvider>
-			<div className="container">
-				<Rating />
-				<Comment />
-			</div>
+			<CommentContainer />
 		</CommentProvider>
 	);
 }
