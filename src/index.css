@@ -30,7 +30,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow-x: hidden;
 	background-color: var(--Verylightgray);
+	padding: 2rem 0;
 }
 
 li {
@@ -57,7 +59,6 @@ ul {
 .container-reply {
 	border-left: 2px solid var(--Lightgray);
 	padding-left: 2rem;
-	/* margin-left: 2rem; */
 	max-height: fit-content;
 	margin-top: 2rem;
 	display: flex;
@@ -174,6 +175,45 @@ ul {
 	height: 1rem;
 	margin-right: 0.5rem;
 }
+
+/* Current User */
+.currentuser {
+	border-radius: 0.5rem;
+	background-color: var(--White);
+	margin: 1rem 0;
+	min-height: 150px;
+	display: flex;
+	padding: 1.5rem;
+}
+
+.currentuser img {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.currentuser-input {
+	flex: 1;
+	padding: 1rem;
+	font-size: 1.2rem;
+	margin: 0 1rem;
+	border-radius: 0.25rem;
+	border: 1px solid var(--Lightgray);
+	color: var(--GrayishBlue);
+}
+.currentuser-btn {
+	height: 2.5rem;
+	width: 90px;
+	border-radius: 0.5rem;
+	border: none;
+	background-color: var(--Moderateblue);
+	color: var(--White);
+	font-weight: 700;
+	font-size: 14px;
+}
+.currentuser-btn:hover {
+	cursor: pointer;
+}
+
 @media (max-width: 1080px) {
 	.container {
 		position: relative;
